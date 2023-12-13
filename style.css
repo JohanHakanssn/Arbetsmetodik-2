@@ -1,10 +1,105 @@
-*,
-*::before *::backdrop {
-  box-sizing: border-box;
-}
+/**
+df = display: flex;
+* jcsb = justify-content: space-between;
+**/
+/**
+* !Changing default styles of the browser
+**/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
 * {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ? Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #262322;
+  color: #f2e5d7;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+
+.cart {
+  background-color: #f2e5d7;
+  color: #262322;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* ? Cards section */
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: #f2e5d7;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+/* Items cards styles */
+/* gt = display grid, gtc = grid-template-columns: repeat(); */
+/* ! Shop */
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  border: 2px solid #262322;
+  border-radius: 3px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.price_quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bi-dash-lg {
+  color: red;
+  font-weight: bold;
+}
+.bi-plus-lg {
+  color: green;
+  font-weight: bold;
 }
