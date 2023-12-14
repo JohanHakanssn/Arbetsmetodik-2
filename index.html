@@ -9,18 +9,26 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar">
-      <h2>Kings BBQ</h2>
-      <div class="cart">
-        <i class="bi bi-basket"></i>
-        <div id="cartAmount" class="cartAmount">0</div>
+    <header class="header__container">
+      <div class="navbar" id="start">
+        <h2>Kings BBQ</h2>
+        <div class="cart">
+          <i class="bi bi-basket"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+        </div>
       </div>
-    </div>
+    </header>
+    <article class="nav__container">
+      <a href="#start" class="nav__p">Start</a>
+      <a href="#bestall__mat" class="nav__p">Beställ Mat</a>
+      <a href="#om__oss" class="nav__p">Om Oss</a>
+    </article>
+
     <!-- End of Navbar -->
 
     <!-- Cards section -->
     <!-- .item*4 = 4 divs with class "item" -->
-    <div class="shop" id="shop">
+    <div class="shop" id="bestall__mat" id="shop">
       <div class="item">
         <img width="220" src="images/img_1.png" alt="" />
         <div class="details">
@@ -84,7 +92,7 @@
     </div>
     <!-- End of Cards section -->
 
-    <article class="about__us__container">
+    <article class="about__us__container" id="om__oss">
       <h2 class="about__us__h2"><u>Om Oss</u></h2>
       <p class="p__about__us">
         Välkommen till Kings BBQ! Vår passion är att skapa en autentisk
