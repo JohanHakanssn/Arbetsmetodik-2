@@ -13165,7 +13165,7 @@ const db = {
 };
 
 // Get the container element
-let bbqContainer = document.getElementById("bbq-container");
+let bbqContainer = document.getElementById("bbq_container");
 
 let basket = [];
 
@@ -13178,14 +13178,14 @@ let generateBBQItem = () => {
   //output data dynamically
   bbqContainer.innerHTML = db.bbqs
     .map((x) => {
-      let { id, name, price, dsc, img } = x;
+      let { id, name, price, dsc, img, } = x;
       return `<div id="product-id-${id}" class="bbq-item">
       <img width="100%" src="${img}" alt="${name}/>
       <div class="details">
         <h3>${name}</h3>
         <p>${dsc}</p>
         <div class="price_quantity">
-          <h2>${price}</h2>
+          <h2>${price}</h2>         
           <div class="buttons">
             <i  class="bi bi-dash-lg"></i>
             <div id="${id}" class="quantity">0</div>
