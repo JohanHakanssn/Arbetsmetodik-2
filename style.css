@@ -52,7 +52,7 @@ body {
 /* Items cards styles */
 /* gt = display grid, gtc = grid-template-columns: repeat(); */
 /* ! Shop */
-.shop {
+#bbq-container {
   display: grid;
   grid-template-columns: repeat(4, 223px);
   gap: 30px;
@@ -60,18 +60,18 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .shop {
+  #bbq-container  {
     grid-template-columns: repeat(2, 223px);
   }
 }
 @media (max-width: 500px) {
-  .shop {
+  #bbq-container {
     grid-template-columns: repeat(1, 223px);
   }
 }
 
-.item {
-  border: 2px solid #262322;
+.bbq-item{
+  border: 1px solid #262322;
   border-radius: 3px;
 }
 
