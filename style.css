@@ -17,6 +17,12 @@ body {
   font-family: sans-serif;
 }
 
+.logo {
+  height: 90px;
+  border: 2px black;
+  border-radius: 50%;
+}
+
 /* ? Navbar */
 .navbar {
   display: flex;
@@ -25,7 +31,23 @@ body {
   background-color: #262322;
   color: #f2e5d7;
   padding: 25px 60px;
-  margin-bottom: 30px;
+  width: 100%;
+  max-height: fit-content;
+}
+
+.nav__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  background-color: #262322;
+  position: sticky;
+  top: 0;
+}
+
+.nav__p {
+  color: #f2e5d7;
+  text-decoration: none;
 }
 
 .cart {
@@ -35,6 +57,7 @@ body {
   font-size: 30px;
   border-radius: 4px;
   position: relative;
+  height: 42px;
 }
 
 /* ? Cards section */
@@ -59,7 +82,7 @@ body {
 }
 
 .about__us__h2 {
-  color: white;
+  color: #f2e5d7;
   margin-top: 1rem;
 }
 
@@ -69,7 +92,7 @@ body {
   font-size: 0.9rem;
   margin-top: 1rem;
   line-height: 1.4rem;
-  color: white;
+  color: #f2e5d7;
 }
 
 .footer__container {
@@ -84,7 +107,7 @@ body {
 }
 
 .footer__text {
-  color: white;
+  color: #f2e5d7;
 }
 
 .img {
