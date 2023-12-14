@@ -49,9 +49,61 @@ body {
   padding: 3px;
 }
 
+.about__us__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  background-color: #262322;
+}
+
+.about__us__h2 {
+  color: white;
+  margin-top: 1rem;
+}
+
+.p__about__us {
+  max-width: 90%;
+  justify-content: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  color: white;
+}
+
+.footer__container {
+  background-color: #262322;
+  height: 3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer__text {
+  color: white;
+}
+
+.img {
+  width: 2.5rem;
+  border-radius: 15px;
+}
+
+.img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
 /* Items cards styles */
 /* gt = display grid, gtc = grid-template-columns: repeat(); */
-/* ! Shop */
+
+
+/* Items cards styles */
+/* gt = display grid, gtc = grid-template-columns: repeat(); */
+/* ! Food Container */
 #bbq-container {
   display: grid;
   grid-template-columns: repeat(4, 223px);
