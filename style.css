@@ -49,6 +49,31 @@ body {
   padding: 3px;
 }
 
+.footer__container {
+  background-color: #262322;
+  height: 3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer__text {
+  color: white;
+}
+
+.img {
+  width: 2.5rem;
+  border-radius: 15px;
+}
+
+.img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
 /* Items cards styles */
 /* gt = display grid, gtc = grid-template-columns: repeat(); */
 /* ! Shop */
