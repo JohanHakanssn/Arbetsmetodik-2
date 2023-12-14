@@ -8,92 +8,26 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <header class="header__container">
-      <div class="navbar" id="start">
-        <h2>Kings BBQ</h2>
-        <div class="cart">
-          <i class="bi bi-basket"></i>
-          <div id="cartAmount" class="cartAmount">0</div>
-        </div>
+    <div class="navbar" id="start">
+      <h2>Kings BBQ</h2>
+      <div class="cart">
+        <i class="bi bi-basket"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
       </div>
-    </header>
-    <article class="nav__container">
+    </div>
+    <article id="bestall__mat" class="nav__container">
       <a href="#start" class="nav__p">Start</a>
       <a href="#bestall__mat" class="nav__p">Beställ Mat</a>
       <a href="#om__oss" class="nav__p">Om Oss</a>
     </article>
 
-    <!-- End of Navbar -->
+    <!-- an empty container for adding dynamically the BBQ items -->
+    <div id="bbq_container"></div>
+    <!-- End of the BBQ items section -->
 
     <!-- Cards section -->
     <!-- .item*4 = 4 divs with class "item" -->
-    <div class="shop" id="bestall__mat" id="shop">
-      <div class="item">
-        <img width="220" src="images/img_1.png" alt="" />
-        <div class="details">
-          <h3>Beef</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          <div class="price_quantity">
-            <h2>150:-</h2>
-            <div class="buttons">
-              <i class="bi bi-dash-lg"></i>
-              <div class="quantity">0</div>
-              <i class="bi bi-plus-lg"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img width="220" src="images/img_2.png" alt="" />
-        <div class="details">
-          <h3>Beef</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          <div class="price_quantity">
-            <h2>150:-</h2>
-            <div class="buttons">
-              <i class="bi bi-dash-lg"></i>
-              <div class="quantity">0</div>
-              <i class="bi bi-plus-lg"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img width="220" src="images/img_1.png" alt="" />
-        <div class="details">
-          <h3>Beef</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          <div class="price_quantity">
-            <h2>150:-</h2>
-            <div class="buttons">
-              <i class="bi bi-dash-lg"></i>
-              <div class="quantity">0</div>
-              <i class="bi bi-plus-lg"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img width="220" src="images/img_1.png" alt="" />
-        <div class="details">
-          <h3>Beef</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          <div class="price_quantity">
-            <h2>150:-</h2>
-            <div class="buttons">
-              <i class="bi bi-dash-lg"></i>
-              <div class="quantity">0</div>
-              <i class="bi bi-plus-lg"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of Cards section -->
-
     <article class="about__us__container" id="om__oss">
-   <article class="about__us__container">
       <h2 class="about__us__h2"><u>Om Oss</u></h2>
       <p class="p__about__us">
         Välkommen till Kings BBQ! Vår passion är att skapa en autentisk
