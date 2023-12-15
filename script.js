@@ -13201,10 +13201,12 @@ let generateBBQItem = () => {
 generateBBQItem();
 
 function addFeaturedDishes() {
-  const dishes = db.bbqs.slice(0, 5); // Väljer de första 5 maträtterna
-  const container = document.querySelector(".featured__dishes"); // Ändrat till querySelector
+  // Sorterar maträtterna efter pris i stigande ordning
+  const sortedDishes = db.bbqs.sort((a, b) => a.price - b.price).slice(0, 5);
 
-  dishes.forEach((dish) => {
+  const container = document.querySelector(".featured__dishes");
+
+  sortedDishes.forEach((dish) => {
     const dishElement = document.createElement("div");
     dishElement.innerHTML = `
             <img src="${dish.img}" alt="${dish.name}">
