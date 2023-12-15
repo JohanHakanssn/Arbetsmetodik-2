@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: #262322;
   color: #f2e5d7;
   padding: 25px 60px;
