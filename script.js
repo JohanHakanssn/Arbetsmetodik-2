@@ -2,7 +2,7 @@
 /* Global variables */
 /* Mocking data */
 const db = {
-    /* BBQS */
+  /* BBQS */
   bbqs: [
     {
       id: "ribs-brisket-and-burnt-ends",
@@ -13178,14 +13178,14 @@ let generateBBQItem = () => {
   //output data dynamically
   bbqContainer.innerHTML = db.bbqs
     .map((x) => {
-      let { id, name, price, dsc, img, } = x;
+      let { id, name, price, dsc, img } = x;
       return `<div id="product-id-${id}" class="bbq-item">
       <img width="100%" src="${img}" alt="${name}/>
       <div class="details">
         <h3>${name}</h3>
         <p>${dsc}</p>
         <div class="price_quantity">
-          <h2>${price}</h2>         
+          <h2>${price}</h2>
           <div class="buttons">
             <i  class="bi bi-dash-lg"></i>
             <div id="${id}" class="quantity">0</div>
@@ -13199,3 +13199,37 @@ let generateBBQItem = () => {
 };
 
 generateBBQItem();
+
+function addFeaturedDishes() {
+  // Sorterar maträtterna efter pris i stigande ordning
+  const sortedDishes = db.bbqs.sort((a, b) => a.price - b.price).slice(0, 5);
+
+  const container = document.querySelector(".featured__dishes");
+
+  sortedDishes.forEach((dish) => {
+    const dishElement = document.createElement("div");
+    dishElement.innerHTML = `
+            <img src="${dish.img}" alt="${dish.name}">
+            <h3>${dish.name}</h3>
+            <p>${dish.dsc}</p>
+            <p>Pris: ${dish.price} kr</p>
+        `;
+    container.appendChild(dishElement);
+  });
+}
+
+/* Review Modal */
+// Open the review modal
+function openReviewModal() {
+  const modal = document.getElementById("review_modal");
+  modal.style.display = "block";
+}
+
+// Close the review modal
+function closeReviewModal() {
+  const modal = document.getElementById("review_modal");
+  modal.style.display = "none";
+}
+
+// Kör funktionen när sidan laddas
+document.addEventListener("DOMContentLoaded", addFeaturedDishes);
