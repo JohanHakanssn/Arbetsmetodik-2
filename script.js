@@ -13218,5 +13218,18 @@ function addFeaturedDishes() {
   });
 }
 
+/* Review Modal */
+// Open the review modal
+function openReviewModal() {
+  const modal = document.getElementById("review_modal");
+  modal.style.display = "block";
+}
+
+// Close the review modal
+function closeReviewModal() {
+  const modal = document.getElementById("review_modal");
+  modal.style.display = "none";
+}
+
 // Kör funktionen när sidan laddas
 document.addEventListener("DOMContentLoaded", addFeaturedDishes);

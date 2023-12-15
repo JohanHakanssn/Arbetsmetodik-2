@@ -52,8 +52,32 @@
         upplevelse. Så håll ögonen öppna för den storslagna nyöppningen i början
         av 2024!
       </p>
-    </article>
+      <!-- Review Section -->
+      <button id="open_modal" onclick="openReviewModal()">
+        Leave a Review
+      </button>
 
+      <div id="review_modal" class="modal">
+        <div class="modal_content">
+          <span class="close" onclick="closeReviewModal()">&times;</span>
+          <h2>Add a Review</h2>
+          <form id="review_form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" min="1" max="5" required />
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" required></textarea>
+
+            <button type="button" onclick="addReview()">Submit Review</button>
+          </form>
+        </div>
+      </div>
+      <!-- End of review section -->
+    </article>
+    <!-- Footer -->
     <footer class="footer__container">
       <a href="https://www.instagram.com">
         <img
