@@ -72,6 +72,48 @@ body {
   padding: 3px;
 }
 
+.featured__dishes__h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.featured__dishes {
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured__dishes div {
+  margin-bottom: 15px;
+  border: solid black 1px;
+  margin: 1rem;
+  padding: 0.3rem;
+  width: 28ch;
+}
+
+.featured__dishes img {
+  width: 90%;
+  height: auto;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: center;
+
+  font-size: 1.5rem;
+}
+
+.menu__h3 {
+  color: #262322;
+  margin-bottom: 1rem;
+}
+
 .about__us__container {
   display: flex;
   flex-direction: column;

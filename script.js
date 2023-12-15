@@ -13199,3 +13199,22 @@ let generateBBQItem = () => {
 };
 
 generateBBQItem();
+
+function addFeaturedDishes() {
+  const dishes = db.bbqs.slice(0, 5); // Väljer de första 5 maträtterna
+  const container = document.querySelector(".featured__dishes"); // Ändrat till querySelector
+
+  dishes.forEach((dish) => {
+    const dishElement = document.createElement("div");
+    dishElement.innerHTML = `
+            <img src="${dish.img}" alt="${dish.name}">
+            <h3>${dish.name}</h3>
+            <p>${dish.dsc}</p>
+            <p>Pris: ${dish.price} kr</p>
+        `;
+    container.appendChild(dishElement);
+  });
+}
+
+// Kör funktionen när sidan laddas
+document.addEventListener("DOMContentLoaded", addFeaturedDishes);
