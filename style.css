@@ -229,7 +229,7 @@ body {
 }
 /* Style for modal */
 .modal_content {
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   width: clamp(350px, 40%, 500px);
   height: clamp(552px, 40%, 400px);
