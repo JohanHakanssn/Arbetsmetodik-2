@@ -13180,23 +13180,37 @@ let generateBBQItem = () => {
     .map((x) => {
       let { id, name, price, dsc, img } = x;
       return `<div id="product-id-${id}" class="bbq-item">
-      <img width="100%" src="${img}" alt="${name}/>
-      <div class="details">
-        <h3>${name}</h3>
-        <p>${dsc}</p>
-        <div class="price_quantity">
-          <h2>${price}</h2>
-          <div class="buttons">
-            <i  class="bi bi-dash-lg"></i>
-            <div id="${id}" class="quantity">0</div>
-            <i  class="bi bi-plus-lg"></i>
+        <img width="100%" src="${img}" alt="${name}" />
+        <div class="details">
+          <h3>${name}</h3>
+          <p>${dsc}</p>
+          <div class="price_quantity">
+            <h2>${price}</h2>
+            <button id="add-to-cart-${id}" class="add-to-cart-btn">Beställ</button>
           </div>
         </div>
-      </div>
-    </div>`;
+      </div>`;
     })
     .join("");
+  //event listeners till varje "Lägg till i kundkorg"-knapp
+  db.bbqs.forEach((x) => {
+    let addToCartButton = document.getElementById(`add-to-cart-${x.id}`);
+    addToCartButton.addEventListener("click", () => addToCart(x));
+  });
 };
+
+function addToCart(item) {
+  // Lägg till varan i kundkorgen
+  basket.push(item);
+  updateCartCount(); // Uppdatera kundkorgens antal varor
+}
+
+// Funktion för att uppdatera antalet varor i kundkorgen
+function updateCartCount() {
+  // Uppdatera antalet varor i kundkorgen
+  let cartAmount = document.getElementById("cartAmount");
+  cartAmount.textContent = basket.length; // Antalet objekt i kundkorgen
+}
 
 generateBBQItem();
 
