@@ -13251,5 +13251,53 @@ function closeReviewModal() {
   modal.style.display = "none";
 }
 
+//Kundvagn
+// Funktion för att visa modalen
+function showModal() {
+  var modal = document.getElementById("cartModal");
+  modal.style.display = "block";
+
+  // Uppdatera modalen med innehållet i kundvagnen
+  var cartItems = document.getElementById("cartItems");
+  cartItems.innerHTML = basket
+    .map((item) => `<p>${item.name} - ${item.price} kr</p>`)
+    .join("");
+}
+
+// Event Listener för kundvagnsikonen
+var cartIcon = document.querySelector(".bi-basket"); // Uppdatera med din ikons faktiska klass eller id
+cartIcon.addEventListener("click", showModal);
+
+// Stäng modalen
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+  var modal = document.getElementById("cartModal");
+  modal.style.display = "none";
+};
+
+// Stäng modalen om användaren klickar utanför den
+window.onclick = function (event) {
+  var modal = document.getElementById("cartModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Funktion för att tömma kundvagnen
+function clearCart() {
+  basket = [];
+  updateCartCount();
+  closeModal();
+}
+
+// Funktion beställning
+function checkout() {
+  alert("Din beställning är mottagen!");
+  clearCart();
+}
+
+document.getElementById("clearCartButton").addEventListener("click", clearCart);
+document.getElementById("checkoutButton").addEventListener("click", checkout);
+
 // Kör funktionen när sidan laddas
 document.addEventListener("DOMContentLoaded", addFeaturedDishes);
