@@ -13223,12 +13223,18 @@ function addFeaturedDishes() {
   sortedDishes.forEach((dish) => {
     const dishElement = document.createElement("div");
     dishElement.innerHTML = `
-            <img src="${dish.img}" alt="${dish.name}">
-            <h3>${dish.name}</h3>
-            <p>${dish.dsc}</p>
-            <p>Pris: ${dish.price} kr</p>
-        `;
+           <img src="${dish.img}" alt="${dish.name}">
+      <h3>${dish.name}</h3>
+      <p>${dish.dsc}</p>
+      <p>Pris: ${dish.price} kr</p>
+      <button id="bestall-${dish.id}" class="bestall-btn">Beställ</button>
+    `;
     container.appendChild(dishElement);
+  });
+  sortedDishes.forEach((dish) => {
+    document
+      .getElementById(`bestall-${dish.id}`)
+      .addEventListener("click", () => addToCart(dish));
   });
 }
 
