@@ -13167,6 +13167,7 @@ const db = {
 // Get the container element
 let bbqContainer = document.getElementById("bbq_container");
 
+/* Basket */
 let basket = [];
 
 // Generate and output data dynamically
@@ -13199,6 +13200,8 @@ let generateBBQItem = () => {
   });
 };
 
+generateBBQItem();
+
 function addToCart(item) {
   // Lägg till varan i kundkorgen
   basket.push(item);
@@ -13211,8 +13214,6 @@ function updateCartCount() {
   let cartAmount = document.getElementById("cartAmount");
   cartAmount.textContent = basket.length; // Antalet objekt i kundkorgen
 }
-
-generateBBQItem();
 
 function addFeaturedDishes() {
   // Sorterar maträtterna efter pris i stigande ordning
@@ -13299,5 +13300,59 @@ function checkout() {
 document.getElementById("clearCartButton").addEventListener("click", clearCart);
 document.getElementById("checkoutButton").addEventListener("click", checkout);
 
+// Function to build and display category buttons
+function buildCategoryButtons(data) {
+  const categoryButtonsContainer = document.getElementById("categoryButtons");
+
+  // Iterate over categories
+  for (const category in data) {
+    if (data.hasOwnProperty(category)) {
+      const categoryButton = document.createElement("button");
+      categoryButton.textContent = category;
+
+      // Add event listener to show items when the button is clicked
+      categoryButton.addEventListener("click", function () {
+        showItemsByCategory(category, data);
+      });
+
+      categoryButtonsContainer.appendChild(categoryButton);
+    }
+  }
+}
+
+// Function to show items in a specific category
+function showItemsByCategory(category, data) {
+  const menuContainer = document.getElementById("menu_modal");
+  menuContainer.innerHTML = ""; // Clear existing menu content
+
+  const categoryContainer = document.createElement("div");
+  categoryContainer.innerHTML = `<h2>${category}</h2>`;
+
+  // Iterate over items in the selected category
+  data[category].forEach((item) => {
+    const itemElement = document.createElement("div");
+    itemElement.className = "item";
+
+    itemElement.innerHTML = `
+    <img src="${item.img}" alt="${item.name}">
+      <p>${item.name} - Pris: ${item.price} kr</p>
+      <button class="buy_button" onclick="addToCart('${item.name}')">Buy</button>
+    `;
+    categoryContainer.appendChild(itemElement); 
+  });
+
+  // Append the category container to the menu
+  menuContainer.appendChild(categoryContainer);
+}
+// Function to simulate buying an item
+function buyItem(itemName) {
+  alert(`You bought ${itemName}!`);
+}
+
 // Kör funktionen när sidan laddas
-document.addEventListener("DOMContentLoaded", addFeaturedDishes);
+document.addEventListener("DOMContentLoaded", function () {
+  // Use the menuData directly
+  addFeaturedDishes(db);
+  buildCategoryButtons(db);
+  buildMenu(db);
+});

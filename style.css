@@ -54,7 +54,6 @@ body {
   height: 42px;
 }
 
-/* ? Cards section */
 .cartAmount {
   position: absolute;
   top: -15px;
@@ -195,7 +194,7 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-/* ! Food Container */
+/* ! Items Container */
 #bbq_container {
   display: grid;
   grid-template-columns: repeat(4, 223px);
@@ -203,14 +202,30 @@ body {
   justify-content: center;
 }
 
+img {
+  max-width: 550px;
+}
+
 @media (max-width: 1000px) {
   #bbq_container {
     grid-template-columns: repeat(2, 223px);
+  }
+  #menu_modal div {
+    flex-direction: column;
+  }
+  div.item {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   #bbq_container {
     grid-template-columns: repeat(1, 223px);
+  }
+  #menu_modal div {
+    flex-direction: column;
+  }
+  div.item {
+    width: 100%;
   }
 }
 
@@ -340,3 +355,82 @@ body {
   cursor: pointer;
 }
 /* ! End of Review */
+
+#menu_modal {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */ /* Center the menu content */
+}
+
+#menu_modal div {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the menu content */
+}
+
+#categoryButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: #d32f2f; /* Red color */
+  border-radius: 5px;
+}
+
+#categoryButtons button {
+  background-color: #333; /* Black color */
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Updated styling for menu items */
+.item {
+  border: 1px solid #262322;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+div.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  gap: 1rem;
+}
+
+.item img {
+  max-width: 100%;
+  /* border-radius: 5px;
+  margin-bottom: 10px; */
+}
+
+.item p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.buy_button {
+  background-color: #d32f2f;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buy_button:hover {
+  background-color: #b71c1c;
+}
