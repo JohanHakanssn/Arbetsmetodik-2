@@ -59,15 +59,6 @@ const db = {
       country: "Austin, TX",
     },
     {
-      id: "barbeque-Sampler-for-8",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/110287/barbeque-sampler-for-4-6.edb4e60564852c9d0227634c31fab279.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Arthur Bryant's Barbeque",
-      dsc: "Barbeque Sampler for 8",
-      price: 139,
-      rate: 5,
-      country: "Kansas City, MO",
-    },
-    {
       id: "17352-ribs-and-pulled-pork-medium-combo-pack",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/137368/Central-BBQ-Ribs-Pulled-Pork-Party-Pack-1_.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
       name: "Central BBQ",
@@ -354,15 +345,6 @@ const db = {
       price: 239,
       rate: 4,
       country: "Kansas City, KS",
-    },
-    {
-      id: "backyard-bbq-picnic-for-4-6",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134212/backyard-bbq-picnic-for-6.2be8d9286f622c9cfe873c6b728b3175.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Blue Smoke",
-      dsc: "Backyard BBQ Picnic for 6",
-      price: 239,
-      rate: 4,
-      country: "New York, NY",
     },
     {
       id: "007-kings-pig-out-party-pack",
