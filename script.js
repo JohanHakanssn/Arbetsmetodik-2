@@ -59,15 +59,6 @@ const db = {
       country: "Austin, TX",
     },
     {
-      id: "barbeque-Sampler-for-8",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/110287/barbeque-sampler-for-4-6.edb4e60564852c9d0227634c31fab279.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Arthur Bryant's Barbeque",
-      dsc: "Barbeque Sampler for 8",
-      price: 139,
-      rate: 5,
-      country: "Kansas City, MO",
-    },
-    {
       id: "17352-ribs-and-pulled-pork-medium-combo-pack",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/137368/Central-BBQ-Ribs-Pulled-Pork-Party-Pack-1_.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
       name: "Central BBQ",
@@ -356,15 +347,6 @@ const db = {
       country: "Kansas City, KS",
     },
     {
-      id: "backyard-bbq-picnic-for-4-6",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134212/backyard-bbq-picnic-for-6.2be8d9286f622c9cfe873c6b728b3175.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Blue Smoke",
-      dsc: "Backyard BBQ Picnic for 6",
-      price: 239,
-      rate: 4,
-      country: "New York, NY",
-    },
-    {
       id: "007-kings-pig-out-party-pack",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/66741/kings-pig-out-party-pack.06e697890e8ff7674df25ec980412cac.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
       name: "Kings BBQ",
@@ -407,15 +389,6 @@ const db = {
       dsc: "Best Seller's BBQ Buffet Pack",
       price: 239,
       rate: 4,
-      country: "Kansas City, MO",
-    },
-    {
-      id: "barbeque-assortment-for-12-16",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132527/barbeque-feast-for-8-12.33d57b4d33aee93b40c12c876061b0a6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Arthur Bryant's Barbeque",
-      dsc: "Barbeque Sampler for 12-16",
-      price: 239,
-      rate: 5,
       country: "Kansas City, MO",
     },
     {
@@ -620,15 +593,7 @@ const db = {
       rate: 5,
       country: "Phoenix, AZ",
     },
-    {
-      id: "gramercy-tavern-mushroom-lasagna-for-4",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134704/gramercy-tavern-mushroom-lasagna-4-pack.88c671dec184d8bee908d6f5d8d860f9.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Gramercy Tavern",
-      dsc: "Gramercy Tavern Mushroom Lasagna for 4",
-      price: 99,
-      rate: 4,
-      country: "New York, NY",
-    },
+
     {
       id: "brown-butter-lobster-roll-kit-4-pack",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/133343/brown-butter-lobster-roll-kit-4-pack.f97b1254243c8628ad1a5cd41227f5d7.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
@@ -646,24 +611,6 @@ const db = {
       price: 169,
       rate: 4,
       country: "New Orleans, LA",
-    },
-    {
-      id: "butchers-feast-for-4",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/104628/butchers-feast-for-4.cf40ca583a3bc2de78ac6355ee4b2995.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Cote Korean Steakhouse",
-      dsc: "The Original Butcher's Feast® for 4",
-      price: 259,
-      rate: 5,
-      country: "New York, NY",
-    },
-    {
-      id: "whole-peking-duck-kit-for-4",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132862/decoys-whole-peking-duck-for-4.36f80dd5235f5495f279ed8765c33167.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "RedFarm",
-      dsc: "Whole Peking Duck Kit for 4",
-      price: 139,
-      rate: 5,
-      country: "New York, NY",
     },
     {
       id: "unconventional-texas-bbq-sampler-for-4-6",
@@ -736,15 +683,6 @@ const db = {
       price: 135,
       rate: 4,
       country: "Phoenix, AZ",
-    },
-    {
-      id: "pasta-dinner-gift-basket",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/111490/pasta-sauce-gift-basket.e7d2b1afaeef767b7327843716d15203.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Fox & the Knife",
-      dsc: "Pasta Dinner Gift Basket",
-      price: 129,
-      rate: 5,
-      country: "Boston, MA",
     },
     {
       id: "chinese-tea-smoked-whole-duck",
@@ -927,15 +865,6 @@ const db = {
       country: "Boston, MA",
     },
     {
-      id: "best-seller-ramen-kits-4-pack",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/119444/best-seller-ramen-kits-for-4.6946ea916af35904079d82208a0cb7e2.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Ivan Ramen",
-      dsc: "Best Seller Ramen Kits for 4",
-      price: 149,
-      rate: 5,
-      country: "New York, NY",
-    },
-    {
       id: "carnitas-taco-kit-for-2-3",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/133954/carnitas-taco-kit-for-2.8e93e32c7ad6399ab54ffd4ccffc648a.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
       name: "Frontera Grill",
@@ -1061,15 +990,7 @@ const db = {
       rate: 4,
       country: "New York, NY",
     },
-    {
-      id: "redfarm-signature-sampler-for-3-4",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131850/redfarm-sampler-for-3-4.b47a4dad3b06d719e9fc17380238afd2.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "RedFarm",
-      dsc: "RedFarm Signature Sampler for 3-4",
-      price: 129,
-      rate: 4,
-      country: "New York, NY",
-    },
+
     {
       id: "yuzu-shio-ramen-kit-for-3",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132439/yuzu-shio-ramen-kit-for-3.eff2c00445f04ccad761867bf8083ab6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
@@ -2695,15 +2616,6 @@ const db = {
       country: "Dayton, OH",
     },
     {
-      id: "world-famous-banana-pudding-party-sized",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/84893/world-famous-banana-pudding-bowl-64-oz.85af650f8f51512f8f3181a11d6587d6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Magnolia Bakery",
-      dsc: "World Famous Banana Pudding Bowl (64 oz.)",
-      price: 56,
-      rate: 4,
-      country: "New York, NY",
-    },
-    {
       id: "jacques-world-famous-chocolate-chip-cookies",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/81172/jacques-world-famous-chocolate-chip-cookies-6-pack.2217a14c443602493bba88aa9335319a.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
       name: "Jacques Torres Chocolate",
@@ -2738,15 +2650,6 @@ const db = {
       price: 89,
       rate: 5,
       country: "Brooklyn, NY",
-    },
-    {
-      id: "smores-variety-pack",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/78037/smores-variety-pack.86cf47d40c0c3508ce14d2659b3f99d4.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Gotta Have S'more",
-      dsc: "S'mores - Variety Pack",
-      price: 49,
-      rate: 5,
-      country: "Los Angeles, CA",
     },
     {
       id: "best-seller-cupcake-dozen",
@@ -3155,15 +3058,6 @@ const db = {
       price: 39,
       rate: 4,
       country: "Natchez, MS",
-    },
-    {
-      id: "cold-brew-concentrate-variety-6-pack",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134399/cold-brew-concentrate-variety-6-pack.ee2c1ff6e21556a824d07fcd6dc96682.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Grady's Cold Brew",
-      dsc: "Cold Brew Concentrate Variety - 6 Pack",
-      price: 60,
-      rate: 5,
-      country: "New York, NY",
     },
     {
       id: "organic-shots-bundle-12-pack",
@@ -6907,15 +6801,6 @@ const db = {
       country: "Memphis, TN",
     },
     {
-      id: "barbeque-Sampler-for-8",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/110287/barbeque-sampler-for-4-6.edb4e60564852c9d0227634c31fab279.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Arthur Bryant's Barbeque",
-      dsc: "Barbeque Sampler for 8",
-      price: 139,
-      rate: 5,
-      country: "Kansas City, MO",
-    },
-    {
       id: "whole-brisket-texas-bbq-sauce",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/110384/whole-brisket-texas-barbecue-bbq-sauce.e07ee4818b20ed43d217bf67fedd41ce.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
       name: "Franklin Barbecue",
@@ -7220,15 +7105,6 @@ const db = {
       price: 49,
       rate: 5,
       country: "Memphis, TN",
-    },
-    {
-      id: "backyard-bbq-picnic-for-4-6",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134212/backyard-bbq-picnic-for-6.2be8d9286f622c9cfe873c6b728b3175.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Blue Smoke",
-      dsc: "Backyard BBQ Picnic for 6",
-      price: 239,
-      rate: 5,
-      country: "New York, NY",
     },
     {
       id: "15048-best-sellers-bbq-buffet-pack",
@@ -13202,10 +13078,11 @@ let generateBBQItem = () => {
 
 generateBBQItem();
 
-function addToCart(item) {
-  // Lägg till varan i kundkorgen
-  basket.push(item);
+function addToCart(selectedItem) {
+  basket.push(selectedItem);
+  console.log(basket);
 
+  // Lägg till varan i kundkorgen
   updateCartCount(); // Uppdatera kundkorgens antal varor
 }
 
@@ -13337,8 +13214,13 @@ function showItemsByCategory(category, data) {
     itemElement.innerHTML = `
     <img src="${item.img}" alt="${item.name}">
       <p>${item.name} - Pris: ${item.price} kr</p>
-      <button id="bestall-${item}" class="buy_button" onclick="addToCart('${item.id}')">Beställ</button>
+      <button class="buy_button">Beställ</button>
     `;
+
+    // Add event listener to the button
+    itemElement
+      .querySelector(".buy_button")
+      .addEventListener("click", () => addToCart(item));
 
     categoryContainer.appendChild(itemElement);
   });
