@@ -2080,15 +2080,7 @@ const db = {
       rate: 4,
       country: "Norwalk, CT",
     },
-    {
-      id: "20482-chocolate-truffle-cake",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131261/chocolate-truffle-cake.289d1e58e4f0ca2dd39568fba9c17e91.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Ferrara Bakery",
-      dsc: "Chocolate Truffle Cake",
-      price: 59,
-      rate: 5,
-      country: "New York, NY",
-    },
+
     {
       id: "signature-macarons-chocolates-16-pieces",
       img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132333/signature-macarons-chocolates-16-pieces.6072c1e13db3f2ebca89db228f421715.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
@@ -2178,15 +2170,6 @@ const db = {
       price: 65,
       rate: 4,
       country: "Brooklyn, NY",
-    },
-    {
-      id: "double-chocolate-cake",
-      img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131604/double-chocolate-cake.bff63e243145fe04ec8a384d1bc1926c.gif?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      name: "Magnolia Bakery",
-      dsc: "Double Chocolate Cake",
-      price: 65,
-      rate: 5,
-      country: "New York, NY",
     },
     {
       id: "chocolate-ganache-fudge-brownie",
