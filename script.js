@@ -13205,6 +13205,7 @@ generateBBQItem();
 function addToCart(item) {
   // Lägg till varan i kundkorgen
   basket.push(item);
+
   updateCartCount(); // Uppdatera kundkorgens antal varor
 }
 
@@ -13336,7 +13337,7 @@ function showItemsByCategory(category, data) {
     itemElement.innerHTML = `
     <img src="${item.img}" alt="${item.name}">
       <p>${item.name} - Pris: ${item.price} kr</p>
-      <button id="bestall-${item.id}" class="buy_button" onclick="addToCart(item)">Beställ</button>
+      <button id="bestall-${item}" class="buy_button" onclick="addToCart('${item.id}')">Beställ</button>
     `;
 
     categoryContainer.appendChild(itemElement);
@@ -13344,10 +13345,6 @@ function showItemsByCategory(category, data) {
 
   // Append the category container to the menu
   menuContainer.appendChild(categoryContainer);
-}
-// Function to simulate buying an item
-function buyItem(itemName) {
-  alert(`You bought ${itemName}!`);
 }
 
 // Kör funktionen när sidan laddas
