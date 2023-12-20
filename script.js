@@ -13336,9 +13336,10 @@ function showItemsByCategory(category, data) {
     itemElement.innerHTML = `
     <img src="${item.img}" alt="${item.name}">
       <p>${item.name} - Pris: ${item.price} kr</p>
-      <button class="buy_button" onclick="addToCart('${item.name}')">Buy</button>
+      <button id="bestall-${item.id}" class="buy_button" onclick="addToCart(item)">Beställ</button>
     `;
-    categoryContainer.appendChild(itemElement); 
+
+    categoryContainer.appendChild(itemElement);
   });
 
   // Append the category container to the menu
