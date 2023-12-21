@@ -13023,7 +13023,6 @@ const db = {
   },
 };
 
-// Get the container element
 let bbqContainer = document.getElementById("bbq_container");
 
 /* Basket */
@@ -13114,19 +13113,17 @@ function closeReviewModal() {
 }
 
 //Kundvagn
-// Funktion för att visa kundvagnen
 function showModal() {
   let modal = document.getElementById("cartModal");
   modal.style.display = "block";
 
-  // Uppdatera modalen med innehållet i kundvagnen
   let cartItems = document.getElementById("cartItems");
   cartItems.innerHTML = basket
     .map((item) => `<p>${item.name} - ${item.price} kr</p>`)
     .join("");
 }
 
-let cartIcon = document.querySelector(".bi-basket"); // Uppdatera med din ikons faktiska klass eller id
+let cartIcon = document.querySelector(".bi-basket");
 cartIcon.addEventListener("click", showModal);
 
 // Stäng kundvagnen
