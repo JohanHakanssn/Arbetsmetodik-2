@@ -13114,38 +13114,36 @@ function closeReviewModal() {
 }
 
 //Kundvagn
-// Funktion för att visa modalen
+// Funktion för att visa kundvagnen
 function showModal() {
-  var modal = document.getElementById("cartModal");
+  let modal = document.getElementById("cartModal");
   modal.style.display = "block";
 
   // Uppdatera modalen med innehållet i kundvagnen
-  var cartItems = document.getElementById("cartItems");
+  let cartItems = document.getElementById("cartItems");
   cartItems.innerHTML = basket
     .map((item) => `<p>${item.name} - ${item.price} kr</p>`)
     .join("");
 }
 
-// Event Listener för kundvagnsikonen
-var cartIcon = document.querySelector(".bi-basket"); // Uppdatera med din ikons faktiska klass eller id
+let cartIcon = document.querySelector(".bi-basket"); // Uppdatera med din ikons faktiska klass eller id
 cartIcon.addEventListener("click", showModal);
 
-// Stäng modalen
-var span = document.getElementsByClassName("close")[0];
+// Stäng kundvagnen
+let span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
-  var modal = document.getElementById("cartModal");
+  let modal = document.getElementById("cartModal");
   modal.style.display = "none";
 };
-
-// Stäng modalen om användaren klickar utanför den
+// Klicka utanför kundvagnen för att stänga den
 window.onclick = function (event) {
-  var modal = document.getElementById("cartModal");
+  let modal = document.getElementById("cartModal");
   if (event.target == modal) {
     modal.style.display = "none";
   }
 };
 
-// Funktion för att tömma kundvagnen
+// Tömm kundvagnen
 function clearCart() {
   basket = [];
   updateCartCount();
@@ -13165,13 +13163,11 @@ document.getElementById("checkoutButton").addEventListener("click", checkout);
 function buildCategoryButtons(data) {
   const categoryButtonsContainer = document.getElementById("categoryButtons");
 
-  // Iterate over categories
   for (const category in data) {
     if (data.hasOwnProperty(category)) {
       const categoryButton = document.createElement("button");
       categoryButton.textContent = category;
 
-      // Add event listener to show items when the button is clicked
       categoryButton.addEventListener("click", function () {
         showItemsByCategory(category, data);
       });
@@ -13181,15 +13177,14 @@ function buildCategoryButtons(data) {
   }
 }
 
-// Function to show items in a specific category
+// Function for categorys
 function showItemsByCategory(category, data) {
   const menuContainer = document.getElementById("menu_modal");
-  menuContainer.innerHTML = ""; // Clear existing menu content
+  menuContainer.innerHTML = "";
 
   const categoryContainer = document.createElement("div");
   categoryContainer.innerHTML = `<h2>${category}</h2>`;
 
-  // Iterate over items in the selected category
   data[category].forEach((item) => {
     const itemElement = document.createElement("div");
     itemElement.className = "item";
@@ -13208,13 +13203,11 @@ function showItemsByCategory(category, data) {
     categoryContainer.appendChild(itemElement);
   });
 
-  // Append the category container to the menu
   menuContainer.appendChild(categoryContainer);
 }
 
-// Kör funktionen när sidan laddas
+// Sidan laddas
 document.addEventListener("DOMContentLoaded", function () {
-  // Use the menuData directly
   addFeaturedDishes(db);
   buildCategoryButtons(db);
   buildMenu(db);
